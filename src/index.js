@@ -129,10 +129,8 @@ const vaccineManf = require('/valuesets/vaccine-mah-manf.json');
 const testType = require('/valuesets/test-type.json');
 const testResult = require('/valuesets/test-result.json');
 
-import iconUrl from "/graphics/icon.png";
-import icon2xUrl from "/graphics/icon@2x.png";
+import logoUrl from "/graphics/logo.png";
 import thumbnailUrl from "/graphics/thumbnail.png";
-import thumbnailx2Url from "/graphics/thumbnail@2x.png";
 
 let scanner;
 let qrcode;
@@ -501,10 +499,8 @@ window.addEventListener('load', function() {
 
       // generate manifest file.template file
       let manifest = {
-        "icon.png": "b372117f003fbc0673e9befd9b8f2812a07e1f17",
-        "icon@2x.png": "e77d741df2738a6be8e3324e85833f67f2210c2a",
-        "thumbnail.png": "3f88d2819090a31881244e1d8fbcc00f1c192149",
-        "thumbnail@2x.png": "f1fc4ceb0852fd7e18c2e94b02ceac17f975744e"
+        "logo.png": "382f3d04f127d43d23e3c9880da821f7df6d8956",
+        "thumbnail.png": "b839f45d4036128efb9ddf9732fb922e44f5975f",
       };
       const passJson = JSON.stringify(template);
       // Get the SHA1 of the pass JSON
@@ -518,17 +514,11 @@ window.addEventListener('load', function() {
         passbook.file("manifest.json", JSON.stringify(manifest));
 
         // Add the static ressources
-        let icon = fetch(iconUrl).then((response) => {
-          passbook.file("icon.png", response.blob());
-        });
-        let icon2x = fetch(icon2xUrl).then((response) => {
-          passbook.file("icon@2x.png", response.blob());
-        });
         let thumbnail = fetch(thumbnailUrl).then((response) => {
           passbook.file("thumbnail.png", response.blob());
         });
-        let thumbnailx2 = fetch(thumbnailx2Url).then((response) => {
-          passbook.file("thumbnail@2x.png", response.blob());
+        let logo = fetch(logoUrl).then((response) => {
+          passbook.file("logo.png", response.blob());
         });
 
         // Call for signature file
