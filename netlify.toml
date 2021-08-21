@@ -26,3 +26,10 @@ targetPort = 1234
 NODE_ENV = "development"
 
 ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
+
+[[redirect]]
+  from = "/update"
+  to =  "/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
