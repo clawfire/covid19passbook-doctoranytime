@@ -131,6 +131,8 @@ const testResult = require('/valuesets/test-result.json');
 
 import logoUrl from "/graphics/logo.png";
 import thumbnailUrl from "/graphics/thumbnail.png";
+import iconUrl from "/graphics/icon.png";
+import icon2xUrl from "/graphics/icon@2x.png";
 
 let scanner;
 let qrcode;
@@ -499,8 +501,10 @@ window.addEventListener('load', function() {
 
       // generate manifest file.template file
       let manifest = {
-        "logo.png": "382f3d04f127d43d23e3c9880da821f7df6d8956",
-        "thumbnail.png": "b839f45d4036128efb9ddf9732fb922e44f5975f",
+        "logo.png": "1fc43120e188fddb26d047e78ff59d8fe4122558",
+        "thumbnail.png": "d36a7ee45af19dd8578e6ee084ba2a5b90eb0806",
+        "icon.png": "b372117f003fbc0673e9befd9b8f2812a07e1f17",
+        "icon@2x.png": "e77d741df2738a6be8e3324e85833f67f2210c2a"
       };
       const passJson = JSON.stringify(template);
       // Get the SHA1 of the pass JSON
@@ -520,6 +524,12 @@ window.addEventListener('load', function() {
         let logo = fetch(logoUrl).then((response) => {
           passbook.file("logo.png", response.blob());
         });
+        let icon = fetch(iconUrl).then((response) => {
+          passbook.file("icon.png", response.blob());
+        })
+        let icon2x = fetch(icon2xUrl).then((response) => {
+          passbook.file("icon@2x.png", response.blob());
+        })
 
         // Call for signature file
         let signature = fetch(process.env.API_SIGNATURE_URL, {
@@ -540,7 +550,7 @@ window.addEventListener('load', function() {
           window.alert("Error while signing your passbook. Please refresh & try again");
         })
 
-        Promise.all([icon, icon2x, thumbnail, thumbnailx2, signature]).then(() => {
+        Promise.all([logo, icon2x, icon, thumbnail, signature]).then(() => {
           passbook.generateAsync({
             type: "blob",
             mimeType: "application/vnd.apple.pkpass"

@@ -10,6 +10,7 @@
   "labelColor" : "rgb(255, 204, 0)",
   "logoText" : "EU Digital COVID Certificate",
   "webServiceURL": "https://covid19.doctoranytime.be/update",
+  "authenticationToken": "InU8N4750h7SCCsA",
   "barcode" : {
   		"format" : "PKBarcodeFormatQR",
   		"message" : "",
