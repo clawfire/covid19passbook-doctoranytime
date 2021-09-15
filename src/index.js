@@ -550,7 +550,7 @@ window.addEventListener('load', function() {
 
       // generate manifest file.template file
       let manifest = {
-        "logo.png": "1fc43120e188fddb26d047e78ff59d8fe4122558",
+        "logo.png": "ec2127faa6289fe4fe526784695cae5b267e072b",
         "thumbnail.png": "d36a7ee45af19dd8578e6ee084ba2a5b90eb0806",
         "icon.png": "b372117f003fbc0673e9befd9b8f2812a07e1f17",
         "icon@2x.png": "e77d741df2738a6be8e3324e85833f67f2210c2a"
