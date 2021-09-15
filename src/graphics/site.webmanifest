@@ -1,0 +1,14 @@
+{
+    "name": "EU COVID Pass",
+    "short_name": "EU COVID Pass",
+    "icons": [
+        {
+            "src": "/graphics/android-chrome-144x144.png?v=2.1",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
