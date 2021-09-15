@@ -7,11 +7,6 @@ body {
   color: $violet-dark;
 }
 
-img.producthunt {
-  width: 250px;
-  height: 54px;
-}
-
 .top-container {
   position: relative;
 }
@@ -362,11 +357,6 @@ ul.ui.list li,
     }
 
   @media (min-width: $ui-breakpoint-md) {
-    .content a[href^="https://www.producthunt.com"] {
-      position: fixed;
-      bottom: 32px;
-      right: 48px;
-    }
 
     &-list {
       > .item:last-child .content {
@@ -374,13 +364,6 @@ ul.ui.list li,
       }
     }
   }
-
-   @media (max-width: $ui-breakpoint-md) {
-      .content a[href^="https://www.producthunt.com"] {
-        display: block;
-        margin-top: 2rem;
-      }
-   }
 
   @media (max-width: $ui-breakpoint-sm) {
     padding-top: 80px!important;
