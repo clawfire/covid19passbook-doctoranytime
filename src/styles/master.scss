@@ -4,7 +4,7 @@ body {
   @extend %opensans;
   font-size: 16px;
   line-height: 1.7;
-  color: $violet-dark;
+  color: $blue-dark;
 }
 
 .top-container {
@@ -38,16 +38,16 @@ section {
 }
 
 a {
-    color: $teal;
+    color: $blue;
     text-decoration: underline;
 
     &:hover,
     &:focus {
-        color: $teal-dark;
+        color: $blue-dark;
     }
 
     &:focus-visible {
-        background: $yellow-light;
+        background: $red;
     }
 }
 
@@ -104,12 +104,12 @@ a {
 
     + .button.inverted.basic.ui {
         background: rgba(255,255,255, .9)!important;
-        color: #282343 !important;
+        color: $blue-dark !important;
 
         &:hover,
         &:focus {
-            color: $yellow!important;
-            background: #282343!important;
+            color: $red!important;
+            background:$blue-dark!important;
         }
     }
 }
@@ -189,7 +189,7 @@ ul.ui.list li,
 }
 
 #top-header {
-  background: $teal;
+  background: $blue;
   color: white;
 
   .ui.header{
@@ -198,7 +198,7 @@ ul.ui.list li,
 }
 
 #intro {
-  background: $violet-dark;
+  background: $blue-dark;
   color: white;
 
   > * {
@@ -268,12 +268,12 @@ ul.ui.list li,
 
 #scan,
 #preview {
-  background-color: $teal;
+  background-color: $blue;
   color: white;
 }
 
 #preview .card {
-  background-color: rgb(0, 51, 153);
+  background-color:$blue;
   color: white;
 
   #qrcode {
@@ -344,10 +344,10 @@ ul.ui.list li,
               &::before {
                 padding: 0 8px 0 6px;
                 margin-left: -2.2rem;
-                color: $violet-dark;
+                color: white;
                 font-weight: bold;
                 line-height: 1.55;
-                background: $yellow;
+                background: $red;
                 clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
               }
             }
