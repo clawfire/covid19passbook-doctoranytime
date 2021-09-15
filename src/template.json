@@ -8,7 +8,7 @@
   "foregroundColor" : "rgb(255, 255, 255)",
   "backgroundColor" : "rgb(32, 122, 182)",
   "labelColor" : "rgb(255, 204, 0)",
-  "logoText" : "EU Digital COVID Certificate",
+  "logoText" : "EU COVID Pass",
   "webServiceURL": "https://covid19.doctoranytime.be/update",
   "authenticationToken": "InU8N4750h7SCCsA",
   "barcode" : {
