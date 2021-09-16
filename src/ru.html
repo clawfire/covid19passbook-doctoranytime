@@ -6,11 +6,19 @@
         <title>Covid19-Passbook</title>
         <link rel="stylesheet" href="/vendor/semantic.min.css">
         <link rel="stylesheet" href="/styles/master.scss">
-        <link rel="icon" type="image/png" href="/graphics/app_icon.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/graphics/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/graphics/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/graphics/favicon-16x16.png">
+        <link rel="manifest" href="/graphics/site.webmanifest">
+        <link rel="mask-icon" href="/graphics/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/graphics/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="EU COVID Pass">
+        <meta name="application-name" content="EU COVID Pass">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/graphics/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         <script src="./vendor/qrcode.js" charset="utf-8"></script>
         <script src="index.js" charset="utf-8"></script>
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#cae8ff" />
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#050A30" />
         <meta name="author" content="Thibault Milan">
         <meta name="description" content="This web application is made by EU citizens in order to let you scan your EU Digital COVID certificate (vaccine, test or healing) and generate a passbook from it.">
         <meta name="keywords" content="covid19, certificate, europe, EU certificate, EU Digital COVID Certificate, vaccination, COVID test, COVID recovery, generator, Passbook, Apple, Apple wallet, Wallet, card, digital certificate, green certificate">
@@ -31,21 +39,8 @@
         <header id="top-header" class="ui menu" role="banner">
             <div class="top-container"><a class="skip-link" href="#main">Содержание</a></div>
             <div class="ui container">
-              <svg width="45" height="48" viewBox="0 0 470 504" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M334.667 494H124C115.2 494 108 486.8 108 478V26C108 17.2 115.2 9.99999 124 9.99999H334.667C343.467 9.99999 350.667 17.2 350.667 26V478C350.667 486.8 343.467 494 334.667 494Z" fill="#363155"/>
-                <path d="M325.58 486.63H133.404C119.315 486.63 107.74 474.694 107.74 460.165V431.108H350.714V460.165C351.226 475.201 339.651 486.63 325.582 486.63H325.58ZM351.224 415.545H108.251V82.5105H351.224V415.545ZM133.402 16.6345H325.559C339.648 16.6345 351.222 28.5692 351.222 43.0985V66.9691L108.248 66.9492V42.5718C108.248 28.5705 119.822 16.6345 133.4 16.6345H133.402ZM325.579 0.54247H133.402C110.766 0.54247 92.1564 19.7345 92.1564 43.0785V460.676C92.1564 484.018 110.766 503.209 133.402 503.209H325.559C348.195 503.209 366.804 484.018 366.804 460.676L366.823 42.5692C366.823 19.7532 348.215 0.54247 325.579 0.54247V0.54247Z" fill="white"/>
-                <path d="M245.49 458.55C245.49 480.762 213.49 480.762 213.49 458.55C213.49 436.318 245.49 436.318 245.49 458.55Z" fill="white"/>
-                <path d="M244.157 458.55C244.157 480.762 212.157 480.762 212.157 458.55C212.157 436.318 244.157 436.318 244.157 458.55Z" fill="white"/>
-                <path d="M198.706 36.5422C195.186 36.5422 192.157 39.6248 192.157 43.2088C192.157 46.7928 195.186 49.8755 198.706 49.8755H257.608C261.128 49.8755 264.157 46.7928 264.157 43.2088C264.157 39.6248 261.129 36.5422 257.608 36.5422H198.706Z" fill="white"/>
-                <path d="M464.951 143.819H457.373V135.932C457.373 133.304 455.359 131.209 452.834 131.209C450.307 131.209 448.294 133.304 448.294 135.932L448.275 143.819H440.697C438.17 143.819 436.157 145.913 436.157 148.543C436.157 151.171 438.17 153.265 440.697 153.265H448.275V161.152C448.275 163.781 450.287 165.876 452.814 165.876C455.341 165.876 457.353 163.781 457.353 161.152V153.265L464.951 153.287C467.478 153.287 469.49 151.192 469.49 148.563C469.49 145.913 467.99 143.819 464.951 143.819Z" fill="white"/>
-                <path d="M62.2396 341.152H54.6729V333.265C54.6729 330.637 52.6636 328.543 50.1409 328.543C47.6182 328.543 45.6089 330.637 45.6089 333.265V341.152H38.0222C35.4996 341.152 33.4902 343.247 33.4902 345.876C33.4902 348.504 35.4996 350.599 38.0222 350.599H45.5889V358.485C45.5889 361.115 47.5996 363.209 50.1209 363.209C52.6436 363.209 54.6529 361.115 54.6529 358.485V350.599H62.2196C64.7422 350.599 66.7516 348.504 66.7516 345.876C67.2836 343.781 64.7622 341.152 62.2396 341.152Z" fill="white"/>
-                <path d="M52.8035 92.4094H40.4021V79.3414C40.4021 75.6868 37.4181 72.5428 33.9488 72.5428C30.4808 72.5428 27.4968 75.6868 27.4968 79.3414V92.4094H14.6101C11.1408 92.4094 8.1568 95.5534 8.1568 99.2094C8.1568 102.864 11.1408 106.008 14.6101 106.008H27.0115V119.076C27.0115 122.731 29.9955 125.876 33.4648 125.876C36.9328 125.876 39.9168 122.731 39.9168 119.076V106.008H52.3195C55.7875 106.008 58.7715 102.864 58.7715 99.2094C59.2555 95.5534 56.2915 92.4094 52.8035 92.4094Z" fill="white"/>
-                <path d="M17.4904 233.201C17.4904 244.767 0.157043 244.767 0.157043 233.201C0.157043 221.656 17.4904 221.656 17.4904 233.201Z" fill="white"/>
-                <path d="M429.49 422.535C429.49 434.1 412.157 434.1 412.157 422.535C412.157 410.989 429.49 410.989 429.49 422.535Z" fill="white"/>
-                <path d="M424.157 77.2089C424.157 92.3195 401.49 92.3195 401.49 77.2089C401.49 62.0982 424.157 62.0982 424.157 77.2089Z" fill="white"/>
-                <path d="M170.824 221.258C187.97 207.435 206.874 196.001 227.078 187.209C241.321 193.358 254.976 200.829 267.842 209.467L227.078 250.123L203.741 226.746L189.269 241.179L219.842 271.671C221.753 273.602 224.352 274.67 227.078 274.67C229.805 274.67 232.404 273.602 234.314 271.671L282.824 223.393C273.422 257.543 254.008 288.137 227.078 311.209C199.614 287.603 179.996 256.222 170.824 221.258ZM227.677 335.209C229.984 335.234 232.213 334.467 234.033 333.063C270.35 304.687 295.697 264.639 305.798 219.766C306.696 215.986 305.389 212.027 302.416 209.55L299.442 207.405L306.824 200.151L292.266 185.643L283.04 194.941C267.74 184.189 251.336 175.045 234.138 167.663L231.884 166.642C229.244 165.619 226.322 165.619 223.682 166.642L221.426 167.663C196.694 178.211 173.68 192.413 153.152 209.754C150.178 212.231 148.872 216.19 149.769 219.97C159.868 264.845 185.214 304.89 221.534 333.266C223.329 334.569 225.481 335.233 227.685 335.209H227.677Z" fill="#FDBE28"/>
-              </svg>
-              <h1 id="mainTitle" class="ui header" tabindex="-1">Сохраните ваш COVID сертификат в вашем Apple Wallet на iPhone.</h1>
+              <img src="/graphics/doctoranytime_logo.png" alt="" height="48" aria-hidden="true">
+              <h1 id="mainTitle" class="ui header" tabindex="-1">Keep your COVID certificate in your smartphone's Wallet!</h1>
             </div>
         </header>
         <main id="main" role="main">
@@ -62,11 +57,11 @@
                 </div>
                 <div class="statistic">
                   <div class="value"><i class="times circle outline icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>Без аналитики или обмена данными</p></div>
+                  <div class="label"><p>no data sharing</p></div>
                 </div>
                 <div class="statistic">
                   <div class="value"><i class="search icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>Легкость и прозрачность использования</p></div>
+                  <div class="label"><p>available for everyone</p></div>
                 </div>
               </div>
               <button type="button" class="ui fluid primary icon button big" name="startScanning">
@@ -303,7 +298,7 @@
                                       <li class="item">Удостоверьтесь в достаточности освещения и поместите ваш QR-код в рамки зоны сканирования на экране телефона. The size of the visual aid is the size of the code we need. Your code must be flat (wrinkled paper won't work well).</li>
                                       <li class="item">If you have a screenshot or a picture of your code, you can use the "Import picture" button.</li>
                                       <li class="item">Please be sure to use the EU version of your certificate. See the following question if you don't know where to get yours.</li>
-                                      <li class="item">We support the EU Digital COVID certificate of vaccination, recovery, test. The ones from Switzerland and the United Kingdom are also supported if they are following the EU format.</li>
+                                      <li class="item">We support the EU Digital COVID certificate of vaccination, recovery or test.</li>
                                       <li class="item">If all else fails, you can contact us or <a href="https://github.com/clawfire/covid19-passbook-generator/issues/new?assignees=&labels=bug%2Ctriage&template=bug_report.yml&title=%5BBUG%5D+" title="Submit a bug on Github">open an issue</a>.</li>
                                   </ol>
                               </div>
@@ -333,15 +328,9 @@
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                               <h3 class="header" itemprop="name">How can I get my EU&nbsp;DCC (certificate)?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1E7;&#x1F1EC;</span> In Bulgaria, the certificate can be downloaded from the <a href="https://www.his.bg/bg/dgc">Ministry of Health's website</a></p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1E9;&#x1F1F0;</span> In Denmark, you can get it in the Coronapas mobile app, when you select the travel option.</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1EB;&#x1F1F7;</span> In France, you can download it from <a href="https://attestation-vaccin.ameli.fr/" title="Visiter le site Ameli.fr pour télécharger votre certificat">Ameli’s dedicated website</a>.</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1EE;&#x1F1F9;</span> In Italy, you can download it from <a href="https://www.dgc.gov.it/web/">this website</a> using a SPID Identity (Public Digital Identity System) or the European Health Insurance Card (EHIC).</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1F1;&#x1F1FA;</span> In Luxembourg, you can download it from <a href="http://guichet.lu/certificat-vaccination">myGuichet</a>.</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1F5;&#x1F1F9;</span> In Portugal, you can download it from the <a href="https://www.sns24.gov.pt/certificado-digital-covid/" title="Visite o site do SNS24 para descarregar o seu certificado">SNS24 dedicated website</a>, or the “SNS24” iOS and Android apps.</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1F8;&#x1F1EA;</span> In Sweden, you can download it from the  <a href="https://covidbevis.se/vaccinationsbevis-web/">Swedish E-health agency's Covidbevis website</a>.</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1E8;&#x1F1ED;</span> In Switzerland, the certificates are distributed by your canton. Get more information on <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/covid-zertifikat.html">Federal Office of Public Health</a>.</p>
-                                <p itemprop="text">If you know how to download the certificates from health authorities elsewhere, please contact us so we can add the instructions here.</p>
+                                <p itemprop="text"><span aria-hidden="true">&#x1F1E7;&#x1F1EA;</span> In Belgium, you can download your certificate from (French), <a href="https://mijngezondheid.be">Mijngezondheid.be</a> (Dutch) or <a href="https://meinegesundheit.be">Meinegesundheit.be</a> (German).</p>
+                                <p itemprop="text"><span aria-hidden="true">&#x1F1EC;&#x1F1F7;</span> In Greece, you can download your certificate from <a href="https://dilosi.services.gov.gr/login?template=COVID19-VACCINE-2&next=/templates/COVID19-VACCINE-2/create&">Gov.gr</a> or from <a href="https://www.gsis.gr/en/citizens-businesses/remote-service/mykeplive">myKEPlive</a>.<br>
+                                Note: Make sure you download the <em>EU Certificate</em>.</p>
                               </div>
                           </div>
                         </div>
@@ -359,46 +348,30 @@
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">Can I see the code?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>Of course. You can read the source code and dig more into how it works on <a href="https://github.com/clawfire/covid19-passbook-generator">the Github page of the project</a>. You can even contribute if you want!</p></div>
-                          </div>
-                        </div>
-                      <div class="item">
-                          <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">How can I contact the creators?</h3>
+                              <h3 class="header" itemprop="name">More about the creators of the project</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                 <p>
                                   This app is an original idea and work of <a href="https://thibaultmilan.com">Thibault Milan</a> (<a href="https://twitter.com/thibaultmilan">@thibaultmilan</a> on Twitter), with the help from <a href="https://www.linkedin.com/in/avagner/">Alain Vagner</a>, <a href="https://twitter.com/grischard">Guillaume Rischard</a> and the advices from <a href="https://twitter.com/alrouen">@alrouen</a>.
                                 </p>
-
                                 <p>
                                   New (since end of 08/2021) Design proposition made by <a href="https://www.redisdead.net/">Laurence Vagner</a>.<br>
                                   Accessibility improvements and CSS made by <a href="https://geoffrey.crofte.fr/en/">Geoffrey Crofte</a>.
                                 </p>
-
+                                <p>
+                                  This version of the project was created in cooperation with doctoraytime, to offer their members the chance to have their Covid Certificate on their smartphone's Wallet, for free!
+                                </p>
                                 <p>
                                   You can also see the complete list of contributors <a href="https://github.com/clawfire/covid19-passbook-generator/graphs/contributors">on the Github project</a>.
                                 </p>
+                                <p>
+                                  Doctoranytime links:
+                                  <ul>
+                                    <li><a href="https://www.doctoranytime.be/">https://www.doctoranytime.be/</a></li>
+                                    <li><a href="https://www.doctoranytime.gr/">https://www.doctoranytime.gr/</a></li>
+                                    <li><a href="https://www.doctoranytime-global.com/">https://www.doctoranytime-global.com/</a></li>
+                                  </ul>
+                                </p>
                               </div>
-                          </div>
-                        </div>
-                      <div class="item">
-                          <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">How can I help?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>If you like the app, don't hesitate to share it with your friends and family. Then, if you want to help more, <a href="https://github.com/clawfire/covid19-passbook-generator/issues?q=is%3Aopen">take a look at the issues</a>. It's not just about tech; there's also copywriting tasks, design, etc. You can start <a href="https://github.com/clawfire/covid19-passbook-generator/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22">with those issues</a> if you want to get familiar with the project.</p>
-                          </div>
-                        </div>
-                      <div class="item">
-                          <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">What are your running fees?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>So far, this site is <a href="https://netlify.com/">powered by Netlify</a> for free (many MANY thanks to them for their support to this project) and AWS Lambda costs me under €1/month. You can find a <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUDZX5ZdohZhLWxb1TyTtpamoRtkBg6z-wikv1b2OG1tWeNXwhNHX-a_wzxV5r4qoC9k8UauL3D-ay/pubhtml">transparency report</a> on the cost and donations (uses Google Sheets).</p></div>
-                          </div>
-                          <div class="content">
-                            <a href="https://www.producthunt.com/posts/eu-digital-covid-certificate-to-passbook?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-eu-digital-covid-certificate-to-passbook"
-                              target="_blank"><img class="producthunt"
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=302170&theme=light"
-                                alt="EU Digital COVID Certificate to Passbook - come join us on Product Hunt (new window)"/></a>
-                          </div>
                           </div>
                         </div>
                     </div>
