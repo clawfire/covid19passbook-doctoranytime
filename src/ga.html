@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Covid19-Passbook</title>
+        <title>Pasleabhar Covid-19</title>
         <link rel="stylesheet" href="/vendor/semantic.min.css">
         <link rel="stylesheet" href="/styles/master.scss">
         <link rel="apple-touch-icon" sizes="144x144" href="/graphics/apple-touch-icon.png">
@@ -20,27 +20,27 @@
         <script src="./vendor/qrcode.js" charset="utf-8"></script>
         <script src="index.js" charset="utf-8"></script>
         <meta name="author" content="Thibault Milan">
-        <meta name="description" content="This web application is made by EU citizens in order to let you scan your EU Digital COVID certificate (vaccine, test or healing) and generate a passbook from it.">
-        <meta name="keywords" content="covid19, certificate, europe, EU certificate, EU Digital COVID Certificate, vaccination, COVID test, COVID recovery, generator, Passbook, Apple, Apple wallet, Wallet, card, digital certificate, green certificate">
+        <meta name="description" content="Déanann saoránaigh an AE an feidhmchlár gréasáin seo d’fhonn ligean duit do theastas Digiteach COVID AE (vacsaín, tástáil nó leigheas) a scanadh agus pasleabhar a ghiniúint uaidh.">
+        <meta name="keywords" content="covid19, deimhniú, Eoraip, deimhniú AE, Teastas Digiteach COVID an AE, Vacsaíniú, tástáil COVID, aisghabháil COVID, gineadóir, Pasleabhar, Apple, sparán Apple, Sparán, cárta, teastas digiteach, teastas glas">
         <meta name="robots" content="index, follow, noarchive">
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@thibaultmilan" />
-        <meta name="twitter:title" content="Save your EU Digital COVID Certificate to your iPhone Wallet" />
-        <meta name="twitter:description" content="This web application is made by EU citizens in order to let you scan your EU Digital COVID certificate (vaccine, test or healing) and generate a passbook from it." />
+        <meta name="twitter:title" content="Sábháil do Theastas Digiteach COVID AE ar do Sparán iPhone" />
+        <meta name="twitter:description" content="Déanann saoránaigh an AE an feidhmchlár gréasáin seo d’fhonn ligean duit do theastas Digiteach COVID AE (vacsaín, tástáil nó leigheas) a scanadh agus pasleabhar a ghiniúint uaidh." />
         <meta name="twitter:image" content="/graphics/twitter.png" />
-        <meta property='og:title' content='Save your EU Digital COVID Certificate to your iPhone Wallet'/>
+        <meta property='og:title' content='Sábháil do Theastas Digiteach COVID AE ar do Sparán iPhone'/>
         <meta property="og:type" content="article" />
         <meta property='og:image' content='/graphics/linkedin.png'/>
-        <meta property='og:description' content='This web application is made by EU citizens in order to let you scan your EU Digital COVID certificate (vaccine, test or healing) and generate a passbook from it.'/>
+        <meta property='og:description' content='Déanann saoránaigh an AE an feidhmchlár gréasáin seo d’fhonn ligean duit do theastas Digiteach COVID AE (vacsaín, tástáil nó leigheas) a scanadh agus pasleabhar a ghiniúint uaidh.'/>
         <meta property='og:url' content='https://covid19passbook.netlify.app'/>
     </head>
 
     <body class="">
         <header id="top-header" class="ui menu" role="banner">
-            <div class="top-container"><a class="skip-link" href="#intro">content</a></div>
+            <div class="top-container"><a class="skip-link" href="#intro">ábhar</a></div>
             <div class="ui container">
               <img src="/graphics/doctoranytime_logo.png" alt="" height="48" aria-hidden="true">
-              <h1 id="mainTitle" class="ui header" tabindex="-1">Keep your COVID certificate in your smartphone's Wallet!</h1>
+              <h1 id="mainTitle" class="ui header" tabindex="-1">Keep your COVID certificate in your iPhone’s wallet.</h1>
             </div>
         </header>
         <main id="main" role="main">
@@ -49,19 +49,19 @@
               <div class="ui two small statistics">
                 <div class="statistic">
                   <div class="value"><i class="shield alternate icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>generated on your phone</p></div>
+                  <div class="label"><p>ginte ar do ghuthán</p></div>
                 </div>
                 <div class="statistic">
                   <div class="value"><i class="times circle outline icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>no personal data collection</p></div>
+                  <div class="label"><p>gan aon bhailiúchán sonraí pearsanta</p></div>
                 </div>
                 <div class="statistic">
                   <div class="value"><i class="times circle outline icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>no data sharing</p></div>
+                  <div class="label"><p>no analytics or data sharing</p></div>
                 </div>
                 <div class="statistic">
                   <div class="value"><i class="search icon" aria-hidden="true"></i></div>
-                  <div class="label"><p>available for everyone</p></div>
+                  <div class="label"><p>open source & transparent</p></div>
                 </div>
               </div>
               <button type="button" class="ui fluid primary icon button big" name="startScanning">
@@ -130,11 +130,11 @@
                     <path d="M89 84V71H94V84H89Z" fill="currentColor"/>
                     <path d="M51 41V36H56V41H51Z" fill="currentColor"/>
                   </svg>
-                  Scan my certificate
+                  Scanadh mo theastas
               </button>
               <button type="button" class="ui fluid basic inverted icon button big" name="scanImage">
                   <i class="file image icon" aria-hidden="true"></i>
-                  Import picture
+                  Iompórtáil pictiúr
               </button>
               <input type="file" id="qrfile" style="display: none;" accept="image/jpeg, image/png">
             </section>
@@ -142,18 +142,18 @@
                 <div class="ui fluid card">
                     <div class="image" id="scannerContainer">
                         <video id="scanner" aria-labelledby="video-desc">
-                            <p>Your browser is not compatible with our technology.</p>
+                            <p>Níl do bhrabhsálaí comhoiriúnach lenár dteicneolaíocht.</p>
                         </video>
                         <div id="mask"></div>
                     </div>
                     <div class="content">
                         <div class="description" id="video-desc">
-                            <p><i class="qrcode icon" aria-hidden="true"></i> Aim at the QR Code of your certificate to capture.</p>
+                            <p><i class="qrcode icon" aria-hidden="true"></i> Aidhm ag an gCód QR de do theastas a ghabháil.</p>
                         </div>
                     </div>
                     <div class="ui bottom attached disabled button" id="flashlight_btn" >
                         <p><i class="lightbulb icon" aria-hidden="true"></i>
-                        <span>Flashlight unavailable</span></p>
+                        <span>Níl Flashlight ar fáil</span></p>
                     </div>
                 </div>
             </section>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="extra content" id="cardExtraContent">
                     </div>
-                    <button type="button" id="saveInWallet" class="ui bottom attached primary big button"><i class="download icon" aria-hidden="true"></i>Save in your wallet</button>
+                    <button type="button" id="saveInWallet" class="ui bottom attached primary big button"><i class="download icon" aria-hidden="true"></i>Sábháil i do sparán</button>
                 </div>
                 <button type="button" class="ui fluid violet icon button" name="startScanning">
                     <svg width="24" height="24" viewbox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -235,11 +235,11 @@
                     <path d="M89 84V71H94V84H89Z" fill="currentColor"/>
                     <path d="M51 41V36H56V41H51Z" fill="currentColor"/>
                   </svg>
-                    Scan another certificate
+                    Scan teastas eile
                 </button>
                 <button type="button" class="ui fluid basic inverted icon button" name="scanImage">
                     <i class="file image icon" aria-hidden="true"></i>
-                    Import another picture
+                    Iompórtáil pictiúr eile
                 </button>
             </section>
 
@@ -248,11 +248,11 @@
               <section id="language" class="row">
                 <h2 class="ui header">
                   <i class="translate icon"></i>
-                  <div class="content">Language</div>
+                  <div class="content">Teanga</div>
                 </h2>
                 <div class="ui form">
                   <div class="field">
-                    <label for="language-selection">Select your language</label>
+                    <label for="language-selection">Roghnaigh do theanga</label>
                     <select name="language-selection" id="language-selector">
                       <option value="bg">български език</option>
                       <option value="cs">Česky</option>
@@ -282,73 +282,72 @@
                     </select>
                   </div>
                 </div>
-                <p>If this page is still in English after selecting another language, that means we are missing translations for your selected language. <a href="https://crwd.in/covid19-passbook">Help us to translate</a>.</p>
+                <p>Má tá an leathanach seo fós i mBéarla tar éis teanga eile a roghnú, ciallaíonn sé sin go bhfuil aistriúcháin in easnamh orainn don teanga roghnaithe agat. <a href="https://crwd.in/covid19-passbook">Cuidigh linn aistriúchán a dhéanamh</a>.</p>
               </section>
               <section id="faq" class="row">
                   <h2 class="ui header">
-                      <abbr title="Frequently Asked Questions" id="faq-title">FAQ</abbr>
+                      <abbr title="Ceisteanna Coitianta" id="faq-title">Ceisteanna Coitianta</abbr>
                   </h2>
-                  <div class="ui header"><p class="sub header">Learn more about the project, security, how it works and more.</p></div>
+                  <div class="ui header"><p class="sub header">Níos mó a fhoghlaim faoin tionscadal, slándáil, conas a oibríonn sé agus níos mó.</p></div>
                   <div id="faq-list" class="ui relaxed list" itemscope itemtype="https://schema.org/FAQPage">
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">I can't scan my certificate.</h3>
+                              <h3 class="header" itemprop="name">Ní féidir liom mo theastas a scanadh.</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                   <ol class="ui ordered list" itemprop="text" role="list">
-                                      <li class="item">Have a good light source and align your QR code with the scan zone edge. The size of the visual aid is the size of the code we need. Your code must be flat (wrinkled paper won't work well).</li>
-                                      <li class="item">If you have a screenshot or a picture of your code, you can use the "Import picture" button.</li>
-                                      <li class="item">Please be sure to use the EU version of your certificate. See the following question if you don't know where to get yours.</li>
+                                      <li class="item">Bíodh foinse solais mhaith agat agus déan do chód QR a ailíniú le ciumhais an chrios scanadh. Is é méid an chúnaimh amhairc méid an chóid a theastaíonn uainn. Caithfidh do chód a bheith cothrom (ní oibreoidh páipéar rocach go maith).</li>
+                                      <li class="item">Má tá seat scáileáin nó pictiúr de do chód agat, is féidir leat an cnaipe "Iompórtáil pictiúr" a úsáid.</li>
+                                      <li class="item">Bí cinnte le do thoil an leagan AE de do theastas a úsáid. Féach an cheist seo a leanas mura bhfuil a fhios agat cá háit le do cheann féin a fháil.</li>
                                       <li class="item">We support the EU Digital COVID certificate of vaccination, recovery or test.</li>
-                                      <li class="item">If all else fails, you can contact us or <a href="https://github.com/clawfire/covid19-passbook-generator/issues/new?assignees=&labels=bug%2Ctriage&template=bug_report.yml&title=%5BBUG%5D+" title="Submit a bug on Github">open an issue</a>.</li>
+                                      <li class="item">Má theipeann ar gach rud eile, is féidir leat teagmháil a dhéanamh linn nó <a href="https://github.com/clawfire/covid19-passbook-generator/issues/new?assignees=&labels=bug%2Ctriage&template=bug_report.yml&title=%5BBUG%5D+" title="Submit a bug on Github">ceist a oscailt</a>.</li>
                                   </ol>
                               </div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">What's this project?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">This web application scans your EU Digital COVID certificate (vaccine, test, or healing) and generates a passbook from it. You can then import it into your iPhone's wallet, or if you're an Android user, import it into an app that supports it.</div>
+                              <h3 class="header" itemprop="name">Cad é an tionscadal seo?</h3>
+                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">Scanann an feidhmchlár gréasáin seo do theastas Digiteach COVID an AE (vacsaín, tástáil nó leigheas) agus gineann sé leabhar pas uaidh. Ansin is féidir leat é a iompórtáil isteach i sparán do iPhone, nó más úsáideoir Android tú, é a iompórtáil isteach in aip a thacaíonn leis.</div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">Can I save the certificate on Android?</h3>
+                              <h3 class="header" itemprop="name">An féidir liom an deimhniú a shábháil ar Android?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                  <p itemprop="text">Yes! You can save the .pkpass file and open it with an application that supports this format, for example:</p>
+                                  <p itemprop="text">Tá! Is féidir leat an comhad .pkpass a shábháil agus é a oscailt le feidhmchlár a thacaíonn leis an bhformáid seo, mar shampla:</p>
                                   <ul itemprop="text">
                                       <li><a href="https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=fr&gl=US">Stocard</a> (Google Play Store)</li>
                                       <li><a href="https://f-droid.org/fr/packages/org.ligi.passandroid/">PassAndroid</a> (F-Droid)</li>
                                       <li><a href="https://play.google.com/store/apps/details?id=io.walletpasses.android">WalletPasses</a> (Google Play Store)</li>
                                   </ul>
-                                  <p itemprop="text">You can also screenshot the pass preview we display before download; it contains all the relevant information you see on the cover of your paper certificate.</p>
+                                  <p itemprop="text">Is féidir leat an réamhamharc pas a thaispeánann muid a íoslódáil roimh an íoslódáil; tá an fhaisnéis ábhartha uile a fheiceann tú ar chlúdach do theastas páipéir.</p>
                               </div>
                           </div>
                       </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">How can I get my EU&nbsp;DCC (certificate)?</h3>
+                              <h3 class="header" itemprop="name">Conas is féidir liom mo DCC AE (deimhniú) a fháil?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1E7;&#x1F1EA;</span> In Belgium, you can download your certificate from (French), <a href="https://mijngezondheid.be">Mijngezondheid.be</a> (Dutch) or <a href="https://meinegesundheit.be">Meinegesundheit.be</a> (German).</p>
-                                <p itemprop="text"><span aria-hidden="true">&#x1F1EC;&#x1F1F7;</span> In Greece, you can download your certificate from <a href="https://dilosi.services.gov.gr/login?template=COVID19-VACCINE-2&next=/templates/COVID19-VACCINE-2/create&">Gov.gr</a> or from <a href="https://www.gsis.gr/en/citizens-businesses/remote-service/mykeplive">myKEPlive</a>.<br>
-                                Note: Make sure you download the <em>EU Certificate</em>.</p>
+                                <p itemprop="text"><span aria-hidden="true">&#x1F1E7;&#x1F1EC;</span> In Bulgaria, the certificate can be downloaded from the <a href="https://www.his.bg/bg/dgc">Ministry of Health's website</a></p>
+                                <p itemprop="text"><span aria-hidden="true">&#x1F1E9;&#x1F1F0;</span> In Denmark, you can get it in the Coronapas mobile app, when you select the travel option.</p>
                               </div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">How does it work?</h3>
+                              <h3 class="header" itemprop="name">Conas a oibríonn sé?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>When you scan the code, we read the data and create the passbook (the file needed to have a card in your wallet). We send a checksum for digital signature to our server, without sending your data. Your phone generates the final file and lets you save it.</p></div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">Is it secure?</h3>
+                              <h3 class="header" itemprop="name">An bhfuil sé slán?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>We put a lot of effort into making it as secure as we could. Your personal data never leaves your phone. Apple requires a digital signature to open a pass. To generate this, the app only sends a checksum of your data to our server, and it's impossible to guess the original content. The last step happens on your phone: you preview your information before saving the pass. We don't track anyone, we don't collect any personal information, and we don't use cookies.</p></div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">More about the creators of the project</h3>
+                              <h3 class="header" itemprop="name">Can I see the code?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                 <p>
                                   This app is an original idea and work of <a href="https://thibaultmilan.com">Thibault Milan</a> (<a href="https://twitter.com/thibaultmilan">@thibaultmilan</a> on Twitter), with the help from <a href="https://www.linkedin.com/in/avagner/">Alain Vagner</a>, <a href="https://twitter.com/grischard">Guillaume Rischard</a> and the advices from <a href="https://twitter.com/alrouen">@alrouen</a>.
@@ -383,7 +382,7 @@
           <div class="ui basic modal" id="modal-offline">
             <div class="ui icon header">
               <p><i class="toggle off icon" aria-hidden="true"></i>
-              Whoops! You’re offline</p>
+              Whoops! Tá tú as líne</p>
             </div>
             <div class="content">
               <p>You will not be able to generate a new pass while you’re offline. If you want to continue using the app, you will need a data access.</p>
@@ -391,7 +390,7 @@
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
                 <p><i class="checkmark icon" aria-hidden="true"></i>
-                I understand, close this message.</p>
+                Tuigim, dún an teachtaireacht seo.</p>
               </div>
             </div>
           </div>
@@ -402,12 +401,12 @@
               Your browser doesn’t meet the requirements for this app to work.</p>
             </div>
             <div class="content">
-              <p>You’re using a Facebook inc. app which opens the link in preview mode but prevents downloads, so you won’t be able to download the pass. Open the site in a regular browser.</p>
+              <p>You’re using a Facebook inc. app which opens the link in preview mode but prevents downloads, so you won’t be able to download the pass. Oscail an suíomh Gréasáin i mbrabhsálaí rialta.</p>
             </div>
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
                 <p><i class="checkmark icon" aria-hidden="true"></i>
-                I understand, close this message.</p>
+                Tuigim, dún an teachtaireacht seo.</p>
               </div>
             </div>
           </div>
@@ -423,7 +422,7 @@
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
                 <p><i class="checkmark icon" aria-hidden="true"></i>
-                I understand, close this message</p>
+                Tuigim, dún an teachtaireacht seo</p>
               </div>
             </div>
           </div>
@@ -431,7 +430,7 @@
           <div class="ui basic modal" id="modal-unsupported-old-browser">
             <div class="ui icon header">
               <i class="exclamation circle icon"></i>
-              Your browser is too old.
+              Tá do bhrabhsálaí ró-aosta.
             </div>
             <div class="content">
               <p>Sorry but your browser is too old and can't handle the cryptographic mathematic operation required to decode your QR code.</p>
@@ -443,15 +442,15 @@
           <div id="error-modal" class="ui modal">
             <i class="close icon" aria-hidden="true"></i>
             <h3 class="header">
-                An error has just been detected.
+                Braitheadh earráid.
             </h3>
             <div class="content">
               <div class="description">
                 <p>You can help us by sending the information about this error to the development team in order to prevent it to happen again.</p>
-                <p>Feel free to check that the error information below does not contain any personal information. You can also add some context information if you wish. Thanks for your help!</p>
+                <p>Feel free to check that the error information below does not contain any personal information. You can also add some context information if you wish. Go raibh maith agat as do chuidiú!</p>
                 <div class="ui form">
                   <div class="field">
-                    <label for="error-msg">Error message</label>
+                    <label for="error-msg">Teachtaireacht earráide</label>
                     <textarea rows="10" id="error-msg"></textarea>
                   </div>
                 </div>
@@ -470,11 +469,11 @@
           <div class="ui stackable grid container">
             <div class="ui labels" id="buildInfos">
               <div class="ui label">
-                Version
+                Leagan
                 <div class="detail">2.1.1</div>
               </div>
               <div class="ui label">
-                Published on
+                Foilsithe ar
                 <div class="detail">October 7h 2021</div>
               </div>
             </div>
