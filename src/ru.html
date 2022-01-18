@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Covid19 -Passbook</title>
+        <title>Covid19-Passbook</title>
         <link rel="stylesheet" href="/vendor/semantic.min.css">
         <link rel="stylesheet" href="/styles/master.scss">
         <link rel="apple-touch-icon" sizes="144x144" href="/graphics/apple-touch-icon.png">
@@ -20,18 +20,18 @@
         <script src="./vendor/qrcode.js" charset="utf-8"></script>
         <script src="index.js" charset="utf-8"></script>
         <meta name="author" content="Thibault Milan">
-        <meta name="description" content="Это веб-приложение осуществляется гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или исцеление) и сгенерировать из него пароль.">
-        <meta name="keywords" content="covid19, сертификат, европа, сертификат ЕС, сертификат EU Digital COVID, вакцинация, тест COVID, восстановление COVID, генератор, Passbook, Apple, кошелек Apple, бумажник, карточка, цифровой сертификат, зеленый сертификат">
+        <meta name="description" content="Это веб-приложение разработано гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или перенесённое заболевание) и сгенерировать из него файл в формате Passbook.">
+        <meta name="keywords" content="covid19, сертификат, европа, сертификат ЕС, сертификат EU Digital COVID, вакцинация, тест COVID, восстановление COVID, генератор, Passbook, Apple, Apple Wallet, кошелёк, карточка, цифровой сертификат, зеленый сертификат">
         <meta name="robots" content="index, follow, noarchive">
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@thibaultmilan" />
         <meta name="twitter:title" content="Сохраните сертификат EU Digital COVID на ваш iPhone" />
-        <meta name="twitter:description" content="Это веб-приложение осуществляется гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или исцеление) и сгенерировать из него пароль." />
+        <meta name="twitter:description" content="Это веб-приложение разработано гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или перенесённое заболевание) и сгенерировать из него файл в формате Passbook." />
         <meta name="twitter:image" content="/graphics/twitter.png" />
         <meta property='og:title' content='Сохраните сертификат EU Digital COVID на ваш iPhone'/>
         <meta property="og:type" content="article" />
         <meta property='og:image' content='/graphics/linkedin.png'/>
-        <meta property='og:description' content='Это веб-приложение осуществляется гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или исцеление) и сгенерировать из него пароль.'/>
+        <meta property='og:description' content='Это веб-приложение разработано гражданами ЕС для того, чтобы позволить вам сканировать ваш сертификат EU Digital COVID (вакцина, тест или перенесённое заболевание) и сгенерировать из него файл в формате Passbook.'/>
         <meta property='og:url' content='https://covid19passbook.netlify.app'/>
     </head>
 
@@ -282,11 +282,11 @@
                     </select>
                   </div>
                 </div>
-                <p>Если после выбора другого языка эта страница по-прежнему остается на английском языке, это означает, что мы пропускаем переводы для выбранного языка. <a href="https://crwd.in/covid19-passbook">Помогите нам перевести</a>.</p>
+                <p>Если после выбора языка страница отображается по-английски, это означает, что мы ещё не перевели сайт на выбранный вами язык. <a href="https://crwd.in/covid19-passbook">Помогите нам с переводом!</a></p>
               </section>
               <section id="faq" class="row">
                   <h2 class="ui header">
-                      <abbr title="Часто задающие вопросы" id="faq-title">FAQ</abbr>
+                      <abbr title="Часто задаваемые вопросы" id="faq-title">Часто задаваемые вопросы</abbr>
                   </h2>
                   <div class="ui header"><p class="sub header">Узнайте больше о проекте, безопасности, как это работает и многом другом.</p></div>
                   <div id="faq-list" class="ui relaxed list" itemscope itemtype="https://schema.org/FAQPage">
@@ -295,11 +295,11 @@
                               <h3 class="header" itemprop="name">Я не могу отсканировать мой сертификат.</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                   <ol class="ui ordered list" itemprop="text" role="list">
-                                      <li class="item">Удостоверьтесь в достаточности освещения и поместите ваш QR-код в рамки зоны сканирования на экране телефона. Размер визуальной помощи-это размер кода, который нам нужен. Ваш код должен быть плоским (морщинистая бумага не будет хорошо работать).</li>
-                                      <li class="item">Если у вас есть скриншот или картинка вашего кода, вы можете воспользоваться кнопкой "Импорт картинки".</li>
-                                      <li class="item">Убедитесь, что вы используете версию сертификата ЕС. Смотрите следующий вопрос, если вы не знаете, где взять ваш.</li>
+                                      <li class="item">Удостоверьтесь в достаточности освещения и поместите ваш QR-код в рамки зоны сканирования на экране телефона. Размер кода должен примерно совпадать с рамкой. Разгладьте бумагу, потому что с мятой сканирование работает гораздо хуже.</li>
+                                      <li class="item">Если у вас есть скриншот или картинка с кодом, воспользуйтесь кнопкой "Импорт картинки".</li>
+                                      <li class="item">Убедитесь, что ваш сертификат в формате ЕС. Смотрите следующий вопрос, если не знаете, где его взять.</li>
                                       <li class="item">We support the EU Digital COVID certificate of vaccination, recovery, test.</li>
-                                      <li class="item">Если все остальное не удастся, вы можете связаться с нами или <a href="https://github.com/clawfire/covid19-passbook-generator/issues/new?assignees=&labels=bug%2Ctriage&template=bug_report.yml&title=%5BBUG%5D+" title="Submit a bug on Github">открыть выпуск</a>.</li>
+                                      <li class="item">Если ничего не работает, свяжитесь с нами и <a href="https://github.com/clawfire/covid19-passbook-generator/issues/new?assignees=&labels=bug%2Ctriage&template=bug_report.yml&title=%5BBUG%5D+" title="Submit a bug on Github">сообщите об ошибке</a>.</li>
                                   </ol>
                               </div>
                           </div>
@@ -307,20 +307,20 @@
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                               <h3 class="header" itemprop="name">Что это за проект?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">Это веб-приложение сканирует ваш сертификат EU Digital COVID (вакцина, тест или исцеление) и генерирует из него пароль. После этого вы можете импортировать его в бумажник iPhone или, если вы являетесь пользователем Android, импортировать его в приложение, которое его поддерживает.</div>
+                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">Это приложение сканирует ваш сертификат EU Digital COVID (о вакцине, тесте или перенесённом заболевании) и создаёт файл в формате Passbook. Его можно импортировать его в Apple Wallet на iPhone или, если у вас Android, в одно из приложений, которые поддерживают этот формат.</div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">Можно ли сохранить сертификат на Android?</h3>
+                              <h3 class="header" itemprop="name">Как пользоваться сертификатом в формате Passbook на Android?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                  <p itemprop="text">Да! Файл .pkpass можно сохранить и открыть его с помощью приложения, поддерживаяного в этом формате, например:</p>
+                                  <p itemprop="text">Легко! Файл .pkpass можно сохранить и открыть его с одного из приложений, которые поддерживают этот формат, например:</p>
                                   <ul itemprop="text">
                                       <li><a href="https://play.google.com/store/apps/details?id=de.stocard.stocard&hl=fr&gl=US">Stocard</a> (Google Play Store)</li>
                                       <li><a href="https://f-droid.org/fr/packages/org.ligi.passandroid/">PassAndroid</a> (F-Droid)</li>
                                       <li><a href="https://play.google.com/store/apps/details?id=io.walletpasses.android">WalletPasses</a> (Google Play Store)</li>
                                   </ul>
-                                  <p itemprop="text">Вы также можете скриншот пройти предварительный просмотр, который мы показываем перед загрузкой; он содержит всю необходимую информацию, которую вы видите на обложке вашего бумажного сертификата.</p>
+                                  <p itemprop="text">Кроме того, можно просто сделать снимок экрана, когда приложение показывает сертификат перед тем, как выдаст вам файл. На этом экране отображается вся необходимая информация, которую вы видите на бумажном сертификате.</p>
                               </div>
                           </div>
                       </div>
@@ -336,13 +336,13 @@
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                               <h3 class="header" itemprop="name">Как это работает?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>При сканировании кода мы читаем данные и создаем пароль (файл должен был иметь карту в вашем кошельке). Мы отправляем контрольную сумму для цифровой подписи на наш сервер, без отправки ваших данных. Ваш телефон генерирует окончательный файл и позволяет его сохранить.</p></div>
+                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>При сканировании кода приложение читает данные и создаёт сертификат в формате Passbook (файл, который вы позже откроете на телефоне). Контрольная сумма данных посылается на наш сервер, чтобы создать цифровую подпись, но сами данные остаются на телефоне. Ваш телефон генерирует итоговый файл и позволяет его сохранить.</p></div>
                           </div>
                         </div>
                       <div class="item">
                           <div class="content" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                              <h3 class="header" itemprop="name">Он защищенный?</h3>
-                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>Мы приложили много усилий к тому, чтобы сделать его безопасным, как могли. Ваши личные данные никогда не оставляют свой телефон. Для открытия пропуска Apple требуется цифровая подпись. Чтобы сгенерировать это, приложение отправляет на наш сервер только контрольную сумму ваших данных, и невозможно угадать исходное содержимое. Последний шаг происходит на вашем телефоне: перед сохранением прохода вы просматриваете информацию. Мы никого не отслеживаем, не собираем никакой личной информации и не используем печенье.</p></div>
+                              <h3 class="header" itemprop="name">Это безопасно?</h3>
+                              <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p>Мы приложили много усилий к тому, чтобы сделать приложение безопасным. Ваши личные данные никогда не покидают телефон. Для того, чтобы файл Passbook можно было открыть на устройствах от Apple, необходима цифровая подпись. Чтобы сгенерировать эту подпись, приложение отправляет на наш сервер контрольную сумму ваших данных, по которой невозможно восстановить исходные данные. Последний шаг происходит на вашем телефоне: перед сохранением прохода вы просматриваете информацию. Мы никого не отслеживаем, не собираем никакой личной информации и не используем куки.</p></div>
                           </div>
                         </div>
                       <div class="item">
@@ -350,17 +350,17 @@
                               <h3 class="header" itemprop="name">Can I see the code?</h3>
                               <div class="description" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                 <p>
-                                  Это приложение представляет собой оригинальную идею и работу <a href="https://thibaultmilan.com">Thibault Milan</a> (<a href="https://twitter.com/thibaultmilan">@thibaultmilan</a> в Twitter), с помощью <a href="https://www.linkedin.com/in/avagner/">Алена Вагнер</a>, <a href="https://twitter.com/grischard">Гийом Рисшар</a> и советы от <a href="https://twitter.com/alrouen">@alrouen</a>.
+                                  Оригинальную идею предложил и воплотил в жизнь <a href="https://thibaultmilan.com">Thibault Milan</a> (<a href="https://twitter.com/thibaultmilan">@thibaultmilan</a> в Twitter), с помощью <a href="https://www.linkedin.com/in/avagner/">Alain Vagner</a>, <a href="https://twitter.com/grischard">Guillaume Rischard</a> и <a href="https://twitter.com/alrouen">@alrouen</a>.
                                 </p>
                                 <p>
-                                  Новинка (с конца 08/2021) Дизайн сделан на <a href="https://www.redisdead.net/">Лоуренса Вагнера</a>.<br>
-                                  Специальные возможности и CSS, сделанные на <a href="https://geoffrey.crofte.fr/en/">Джеффри Крофте</a>.
+                                   Новый дизайн (с августа 2021) разработан <a href="https://www.redisdead.net/">Laurence Vagner</a>.<br>
+                                  Улучшения эргономики и CSS были предложены <a href="https://geoffrey.crofte.fr/en/">Geoffrey Crofte</a>.
                                 </p>
                                 <p>
                                   Эта версия проекта была создана в сотрудничестве с doctoraytime, чтобы предложить своим членам возможность иметь сертификат Covid в кошельке смартфона бесплатно!
                                 </p>
                                 <p>
-                                  Вы также можете увидеть полный список авторов <a href="https://github.com/clawfire/covid19-passbook-generator/graphs/contributors">по проекту Github</a>.
+                                  Полный список авторов можно найти <a href="https://github.com/clawfire/covid19-passbook-generator/graphs/contributors">на странице GitHub</a>.
                                 </p>
                                 <p>
                                   Ссылки на Doctoranytime:
@@ -382,15 +382,15 @@
           <div class="ui basic modal" id="modal-offline">
             <div class="ui icon header">
               <p><i class="toggle off icon" aria-hidden="true"></i>
-              Упс! Вы отключены</p>
+              Упс! Нет интернета</p>
             </div>
             <div class="content">
-              <p>Вы не сможете сгенерировать новый проход во время автономной работы. Для продолжения работы с приложением необходим доступ к данным.</p>
+              <p>Невозможно сгенерировать новый сертификат без доступа к интернету. Для продолжения работы с приложением необходим доступ к данным.</p>
             </div>
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
                 <p><i class="checkmark icon" aria-hidden="true"></i>
-                Я понимаю, закройте это сообщение.</p>
+                Ясно.</p>
               </div>
             </div>
           </div>
@@ -401,12 +401,12 @@
               Ваш браузер не соответствует требованиям этого приложения для работы.</p>
             </div>
             <div class="content">
-              <p>Вы используете Facebook inc. приложение, которое открывает ссылку в режиме предварительного просмотра, но предотвращает загрузку, так что вы не сможете скачать пропуск. Откройте сайт в обычном браузере.</p>
+              <p>Вы используете приложение Facebook, которое открывает ссылку в режиме предварительного просмотра, но не позволяет сохранять файлы, так что вы не сможете скачать сертификат. Откройте сайт в обычном браузере.</p>
             </div>
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
                 <p><i class="checkmark icon" aria-hidden="true"></i>
-                Я понимаю, закройте это сообщение.</p>
+                Ясно.</p>
               </div>
             </div>
           </div>
@@ -417,7 +417,7 @@
               Ваш браузер не соответствует требованиям этого приложения для работы.</p>
             </div>
             <div class="content">
-              <p>Необходимо открыть этот сайт с помощью Safari. Apple не позволяет другим браузерам загружать проходы в приложение Wallet.</p>
+              <p>Необходимо открыть этот сайт с помощью Safari. Apple не позволяет другим браузерам загружать сертификаты в приложение Wallet.</p>
             </div>
             <div class="actions">
               <div class="ui blue basic cancel inverted button">
@@ -433,7 +433,7 @@
               Ваш браузер слишком стар.
             </div>
             <div class="content">
-              <p>Извините, но ваш браузер слишком стар и не может обработать криптографическую математическую операцию, необходимую для декодирования вашего QR-кода.</p>
+              <p>Извините, но ваш браузер слишком стар и не поддерживает операции шифрования, необходимые для декодирования вашего QR-кода.</p>
               <p>Для пользователя iOS требуется iOS 14. Если у вас iPhone, начиная с iPhone6S, для использования приложения необходимо обновить iOS.</p>
               <p>Если вы не можете или не хотите обновлять систему, вы можете открыть этот сайт на своем компьютере и использовать его для генерации вашей карты.</p>
             </div>
@@ -442,12 +442,12 @@
           <div id="error-modal" class="ui modal">
             <i class="close icon" aria-hidden="true"></i>
             <h3 class="header">
-                Только что обнаружена ошибка.
+                Произошла ошибка.
             </h3>
             <div class="content">
               <div class="description">
-                <p>Вы можете помочь нам, отправив информацию об этой ошибке в группу разработки, чтобы предотвратить ее снова.</p>
-                <p>Убедитесь в том, что приведенная ниже информация об ошибках не содержит никакой личной информации. Кроме того, можно добавить контекстную информацию. Спасибо за помощь!</p>
+                <p>Помогите проекту, отправив подробности об этой ошибке разрабочикам, чтобы они её исправили.</p>
+                <p>Убедитесь, что приведенная ниже информация об ошибке не содержит личной информации. Если можете, напишите что-нибудь о том, как эта ошибка произошла. Спасибо за помощь!</p>
                 <div class="ui form">
                   <div class="field">
                     <label for="error-msg">Сообщение об ошибке</label>
