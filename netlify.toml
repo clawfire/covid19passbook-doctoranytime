@@ -37,10 +37,10 @@ NODE_ENV = "development"
 [[redirects]]
   from = "/"
   to = "https://doctoranytime.gr/"
-  status = 301
+  force = true
   conditions = {Country=["gr"]}
 
 [[redirects]]
   from = "/"
   to = "https://doctoranytime.br/"
-  status = 301
+  force = true
