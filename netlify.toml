@@ -34,6 +34,17 @@ NODE_ENV = "development"
   force = true
   headers = {X-From = "Netlify"}
 
+[[redirect]]
+  from = "*"
+  to = "https://doctoranytime.gr/"
+  status = 301
+  condition = {Country=["gr"]}
+
+[[redirect]]
+  from = "*"
+  to = "https://doctoranytime.br/"
+  status = 301
+
 # [[redirects]]
 # from = "/"
 # to = "/bg"
