@@ -42,5 +42,5 @@ NODE_ENV = "development"
 
 [[redirects]]
   from = "/"
-  to = "https://doctoranytime.br/"
+  to = "https://doctoranytime.be/"
   force = true
